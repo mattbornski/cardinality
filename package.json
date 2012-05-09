@@ -1,0 +1,41 @@
+{
+  "name": "cardinality",
+  "description": "Set cardinality estimates using LogLog and HyperLogLog implementations",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "directories" : {
+    "lib": "lib",
+    "test": "test"
+  },
+  "homepage": "https://github.com/mattbornski/cardinality",
+  "keywords": [
+    "log",
+    "loglog",
+    "hyper",
+    "hyperloglog",
+    "cardinality",
+    "estimate",
+    "estimation",
+    "algorithm",
+    "set",
+    "flajolet",
+    "durand",
+    "gandouet",
+    "jean-marie",
+    "fusy",
+    "meunier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattbornski/cardinality.git"
+  },
+  "engines": {
+    "node": ">= 0.6"
+  },
+  "devDependencies": {
+    "mocha": "1.x"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
