@@ -25,6 +25,10 @@
     "fusy",
     "meunier"
   ],
+  "dependencies": {
+    "bit-array": "0.1.2",
+    "murmurhash3": "0.0.9"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mattbornski/cardinality.git"
