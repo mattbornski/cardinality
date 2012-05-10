@@ -1,7 +1,7 @@
 {
   "author": "mattbornski",
   "name": "cardinality",
-  "description": "Set cardinality estimates using LogLog and HyperLogLog implementations",
+  "description": "Set cardinality estimates using HyperLogLog implementation",
   "version": "0.0.1",
   "main": "lib/index.js",
   "directories" : {
