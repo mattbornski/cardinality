@@ -1,4 +1,5 @@
 {
+  "author": "mattbornski",
   "name": "cardinality",
   "description": "Set cardinality estimates using LogLog and HyperLogLog implementations",
   "version": "0.0.1",
