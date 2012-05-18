@@ -22,7 +22,7 @@ module.exports = {
       result.push();
       var word = '';
       for (var j = 0; j < 24; j++) {
-        word += '012456789abcdef'[Math.floor(Math.random() * 16)];
+        word += '0123456789abcdef'[Math.floor(Math.random() * 16)];
       }
 
       for (var i = 0; i < Math.random() * 2; i++) {

@@ -2,7 +2,7 @@
   "author": "mattbornski",
   "name": "cardinality",
   "description": "Set cardinality estimates using HyperLogLog implementation",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "directories" : {
     "lib": "lib",
@@ -28,6 +28,7 @@
   ],
   "dependencies": {
     "bit-array": "0.1.2",
+    "fibers": "0.6.7",
     "murmurhash3": "0.0.9"
   },
   "repository": {
