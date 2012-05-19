@@ -19,7 +19,6 @@ module.exports = {
     var result = [];
 
     while (count > 0) {
-      result.push();
       var word = '';
       for (var j = 0; j < 24; j++) {
         word += '0123456789abcdef'[Math.floor(Math.random() * 16)];
