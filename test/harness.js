@@ -39,25 +39,29 @@ module.exports = {
         r++;
       }
     }
-    return {'size': function () { return r; }};
+    return {'size': function (callback) { callback (null, r); }};
   },
-  'compare': function (inputs, f1, f2, sizes) {
-    var results = [];
-    for (var index in sizes) {
-      var data = inputs(sizes[index]);
+  'compare': function (inputs, f1, f2, size, callback) {
+    var data = inputs(size);
       
-      var f1Start = Date.now();
-      var f1Count = f1(data).size();
+    var f1Start = Date.now();
+    f1(data).size(function (error, f1Count) {
+      if (error) {
+        throw error;
+      }
       var f1End = Date.now();
-      
+
       var f2Start = Date.now();
-      var f2Count = f2(data).size();
-      var f2End = Date.now();
-      results.push({
-        'counts': [f1Count, f2Count],
-        'times': [(f1End - f1Start), (f2End - f2Start)],
+      f2(data).size(function (error, f2Count) {
+        if (error) {
+          throw error;
+        }
+        var f2End = Date.now();
+        callback(null, {
+          'counts': [f1Count, f2Count],
+          'times': [(f1End - f1Start), (f2End - f2Start)],
+        });
       });
-    }
-    return results;
+    });
   },
 };

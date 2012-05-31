@@ -26,3 +26,5 @@ Many tech bloggers and scalability evangelists have been writing about HyperLogL
 1. [http://github.com/sedictor/loglog](The GitHub repo of reference PHP and Javascript implementations of the LogLog and HyperLogLog algorithms by Vadim Semenov), from which this repository was originally forked.
 
 2. The paper by Philippe Flajolet, Éric Fusy, Olivier Gandouet and Frédéric Meunier entitled "HyperLogLog: the analysis of a near-optimal cardinality estimation algorithm", available [http://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf](here) as well as [blob/master/HyperLogLog.pdf](here) for your reference.
+
+3. (For future work) [http://hal.archives-ouvertes.fr/docs/00/46/53/13/PDF/sliding_HyperLogLog.pdf](a description of a minor HyperLogLog variation which provides for sliding windows of estimation)
