@@ -1,4 +1,4 @@
-# Cardinality estimation using HyperLogLog algorithm [![Build Status](http://travis-ci.org/mattbornski/cardinality.png)](http://travis-ci.org/mattbornski/cardinality)
+# Cardinality estimation using HyperLogLog algorithm [![Build Status](https://travis-ci.org/mattbornski/cardinality.png)](http://travis-ci.org/mattbornski/cardinality)
 
 The HyperLogLog algorithm estimates the cardinality of the data set (i.e. number of distinct elements in the data set) without having to store the actual elements seen, which would be required for a naive unique count implementation.  In order to achieve a high degree of accuracy with a low memory footprint, a good hash algorithm must be chosen.
 
